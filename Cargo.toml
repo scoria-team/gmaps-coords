@@ -1,0 +1,22 @@
+[package]
+name = "gmaps-coords"
+version = "0.1.0"
+edition = "2021"
+authors = ["scoria-team <141177638+scoria-team@users.noreply.github.com>"]
+license = "MIT OR Apache-2.0"
+description = "Find coordinates for saved places in CSV and GeoJSON files exported from Google Maps."
+repository = "https://github.com/scoria-team/gmaps-coords/"
+categories = ["command-line-utilities"]
+keywords = ["google", "maps", "gmaps", "coords", "coordinates"]
+readme = "README.md"
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "4.5.11", features = ["derive"] }
+csv = "1.3.0"
+fantoccini = "0.21.0"
+geojson = "0.24.1"
+regex = "1.10.5"
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.121"
+tokio = { version = "1.39.2", features = ["full"] }
